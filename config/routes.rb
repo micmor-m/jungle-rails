@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: 'products#index'
+  root to: 'products#index' #this is equivalent to: get '/' => 'products#index'
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
