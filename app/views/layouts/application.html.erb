@@ -11,7 +11,15 @@
   <%= render 'layouts/top_nav' %>
 
   <main class="container">
-  # the yeld below it s to call the SHOw element
+
+  <% if active_sale? %>
+    <p class="alert alert-info">
+      There is an active <% "Back to school" %> sale going on!
+      <strong>Everything is <% 15 %> off! </strong>
+    </p>
+  <% end %>
+
+  <%#the yeld below it s to call the all other pages%>
     <%= yield %>
   </main>
 
