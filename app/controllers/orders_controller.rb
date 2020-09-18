@@ -5,9 +5,18 @@ class OrdersController < ApplicationController
     @enhanced_order = @order.line_items
   end
 
+ 
   def create
+    #get email of the current user for the order
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+    if  @current_user
+      @currrent_email = @current_user[:email]
+    else
+      @currrent_email = "User not login"
+    end
+     
     charge = perform_stripe_charge
-    order  = create_order(charge)
+    order  = create_order(charge, @currrent_email)
 
     if order.valid?
       empty_cart!
@@ -36,9 +45,9 @@ class OrdersController < ApplicationController
     )
   end
 
-  def create_order(stripe_charge)
+  def create_order(stripe_charge, email)
     order = Order.new(
-      email: params[:stripeEmail],
+      email: email, #params[:stripeEmail],
       total_cents: cart_subtotal_cents,
       stripe_charge_id: stripe_charge.id, # returned by stripe
     )
