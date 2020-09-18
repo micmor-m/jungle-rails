@@ -3,6 +3,10 @@
   <header class="page-header">
     <h1>Signup!</h1>
   </header>
+ <%# raise @user_exsist.inspect %>
+  <% if @error %>
+    <p class="alert alert-info"><%=@message%></p>
+  <% end %>
 
   <div class="row">
     <div class="col-sm-6 col-sm-offset-1">
