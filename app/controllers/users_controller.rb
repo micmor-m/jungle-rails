@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     @email = user_params[:email]
     
     #if email already present in database
-    if exist_email?(user_params[:email])
+    if exist_email?((user_params[:email]).downcase)
       #p "This email already exist"
       @message = "This email already exist"
       @error = true
