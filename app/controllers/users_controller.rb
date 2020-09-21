@@ -25,6 +25,11 @@ class UsersController < ApplicationController
       @message = "Password and password confirmation are different"
       @error = true
       render 'new'
+    elsif (user_params[:password].length < 3)
+      #p "Password and password confirmation are different"
+      @message = "Password must be at least 3 char. long"
+      @error = true
+      render 'new'
     elsif ((user_params[:first_name] === '') || (user_params[:last_name] === ''))
       #p "Please fill-in all fields"
       @message = "Please fill-in all fields"
