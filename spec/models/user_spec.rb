@@ -43,6 +43,7 @@ RSpec.describe User, type: :model do
       expect(@user.password_confirmation).to eq(@user.password)
     end
 
+    #ask mentor hot to verif uniquess of a record in database
     xit "validates :email must be unique" do
       @user = User.new({first_name: "Mario", last_name: "Rossi", email: "mario@rossi.com", password: "123", password_confirmation: "123"})
       @user.save!
