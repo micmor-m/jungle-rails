@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of learning Rails.
 
 
 ## Setup
@@ -27,11 +27,18 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Final Product
-!["Screenshot of main page"]()
-!["Screenshot of appointment form"]()
-!["Screenshot of appointment form with input valdation"]()
-!["Screenshot of confirmation message"]()
-!["Screenshot of error message"]()
+!["Screenshot of home page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Home_page.png?raw=true)
+!["Screenshot of Category page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Category_page.png?raw=true)
+!["Screenshot of MyCart page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/MyCart_page.png?raw=true)
+!["Screenshot of Payment page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Payment_page.png?raw=true)
+!["Screenshot of Order_page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Order_page.png?raw=true)
+!["Screenshot of Signup page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Signup_page.png?raw=true)
+!["Screenshot of Login page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Login_page.png?raw=true)
+!["Screenshot of Logged-in page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Logged_in_page.png?raw=true)
+!["Screenshot of Admin dashboard page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Admin_dashboard.png?raw=true)
+!["Screenshot of Admin Products page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Admin_products_page.png?raw=true)
+!["Screenshot of Admin New Product page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/Admin_new_product_page.png?raw=true)
+!["Screenshot of AboutUs page"](https://github.com/micmor-m/jungle-rails/blob/master/doc/AboutUs_page.png?raw=true)
 
 ### Behaviour
 - The user:
