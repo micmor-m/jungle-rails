@@ -3,15 +3,12 @@ class UsersController < ApplicationController
   def new
     @error = false
     @message = ""
-    #p "Error from new user controller #{ @error}"
-    #p "Message from new user controller #{ @message}"
   end
 
   #create for receiving the form and creating a user with form's parameter
   def create
     
     #input verification
-    #p "This is the user parameter email #{user_params[:email]}"
     @email = user_params[:email]
     
     #if email already present in database
